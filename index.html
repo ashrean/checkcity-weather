@@ -21,10 +21,46 @@
             <div class="append-input-group">
                 <button class="btn-info" type="button" id="search-city-btn"> Search </button>
             </div>
-
         </div>
     </form>
+    <!-- search history -->
+    <div class="card">
+        <ul class="list-group" id="search-history-list"></ul>
+        <button class="btn-secondary" type="button" id="clear-history"> Clear History</button>
+    </div>
    </div>
 
+   <!-- Weather Content  -->
+   <div class="row">
+        <div class="city-info">
+            <!-- where the selected city goes -->
+            <h2 id = "current-city"> City Information </h2>
+            <!-- Creating conditions  -->
+            <p class="temp-conditions"> Temperature: <span id="current-temp"></span></p>
+            <p class="temp-conditions"> Humidity:    <span id="current-humidity"></span></p>
+            <p class="temp-conditions"> Wind Speed:  <span id="current-wind-speed"></span></p>
+            <p>UX index: <span id="uv-index"></span></p>
+        </div>
+   </div>
+
+   <!-- 5day forecast -->
+     <div class="row">
+        <h3> 5-DAY FORECAST </h3>
+     </div>
+
+     <div id="5d-forecast" class="row">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title"> Date </h4>
+                <p class="card-text"> Temperature: </p>
+                <p class="card-text"> Humidity: </p>
+                <!-- add icon here -->
+            </div>
+        </div>
+     </div>
+     <script src="/assets/js/script.js"></script>
+     <footer>
+        <h5> Made by Ashley</h5>
+     </footer>
 </body>
 </html>
