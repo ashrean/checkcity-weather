@@ -37,8 +37,7 @@ Email - sese.ashrean@gmail.com
 Linkedin - https://www.linkedin.com/in/ashleyrean/
 
 # Code Snippets
-`
-/* Clicking enter will trigger the input value
+  /* Clicking enter will trigger the input value
 and add it to the search history
 */
 $(document).on("submit", function(event){
@@ -59,6 +58,7 @@ clearHistoryBtn.on("click", function(){
     listArray();
     $(this).addClass("hide");
 });
+
 
 
 
