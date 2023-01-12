@@ -17,3 +17,9 @@ body,
 .card {
     background-color: azure;
 }
+
+
+
+.city-info{
+    border: rounded;
+}

@@ -9,8 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="Assets/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -25,13 +24,15 @@
 
    <!-- searching for city  -->
    <div class="content">
-    <div>
+    <div class="col-12 col-md-3 bg-light pt-3">
         <h3> Search for city: </h3>
         <form>
             <div class="form-group input-group">
                 <input type="text" id="search-city" placeholder="Enter city here">
                 <div class="append-input-group">
-                    <button class="btn-info" type="button" id="search-city-btn"> Search </button>
+                    <button class="btn-info" type="button" id="search-city-btn">
+                        <i class="fa fa-search"></i>
+                    </button>
                 </div>
             </div>
         </form>
@@ -45,32 +46,39 @@
 
 
    <!-- Weather Content  -->
-   <div id="weather-content">
+   <div id="weather-content class= col-12 col-md-9 hide ">
      <div class="row">
-        <div class="city-info">
-            <!-- where the selected city goes -->
-            <h2 id = "current-city"> City Information </h2>
-            <!-- Creating conditions  -->
-            <p class="temp-conditions"> Temperature: <span id="current-temp"></span></p>
-            <p class="temp-conditions"> Humidity:    <span id="current-humidity"></span></p>
-            <p class="temp-conditions"> Wind Speed:  <span id="current-wind-speed"></span></p>
-            <p>UX index: <span id="uv-index"></span></p>
+        <div class="col-12">
+            <div class="city-info my-3 px-3 py-3">
+                <!-- where the selected city goes -->
+                <h2 id = "current-city"> City Information </h2>
+                <!-- Creating conditions  -->
+                <p class="temp-conditions"> Temperature: <span id="current-temp"></span></p>
+                <p class="temp-conditions"> Humidity:    <span id="current-humidity"></span></p>
+                <p class="temp-conditions"> Wind Speed:  <span id="current-wind-speed"></span></p>
+                <p>UX index: <span id="uv-index"></span></p>
+            </div>
         </div>
+
      </div>
    </div>
 
    <!-- 5day forecast -->
      <div class="row">
-        <h3> 5-DAY FORECAST </h3>
+        <div class="col-12">
+            <h3> 5-DAY FORECAST </h3>
+        </div>
      </div>
 
      <div id="5d-forecast" class="row">
-        <div class="card">
-            <div class="card-body">
-                <h4 class="card-title"> Date </h4>
-                <p class="card-text"> Temperature: </p>
-                <p class="card-text"> Humidity: </p>
-                <!-- add icon here -->
+        <div class="col-2">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title"> Date </h4>
+                    <p class="card-text"> Temperature: </p>
+                    <p class="card-text"> Humidity: </p>
+                    <i class ="fa fa-sub"> </i>
+                </div>
             </div>
         </div>
      </div>
