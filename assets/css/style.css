@@ -1,0 +1,19 @@
+html,
+body,
+.content {
+    height: 100%;
+}
+
+.hide {
+    display: none;
+
+}
+
+.city-btn:hover{
+    background-color: papayawhip;
+    cursor: pointer;
+}
+
+.card {
+    background-color: azure;
+}

@@ -214,5 +214,62 @@ function listArray() {
 
 /* Grabbing the city from local storage and
 updating the cities list array for
-the search history side bar 
+the search history side bar
  */
+function loadHistory(searchVal) {
+    if (searchVal){
+        if(cityList.indexOf(searchVal) === -1){
+            cityList.push(searchVal);
+
+            listArray();
+            clearHistoryBtn.removeClass("hide");
+            weatherContent.removeClass("hide");
+
+        } else {
+            var removeIndex = cityList.indexOf(searchVal);
+            cityList.splice(removeIndex, 1);
+
+            cityList.push(searchVal);
+            listArray();
+            clearHistoryBtn.removeClass("hide");
+            weatherContent.removeClass("hide");
+        }
+    }
+}
+
+// Listing array into search history sidebar
+function listArray(){
+    searchHistoryList.empty();
+    cityList.forEach(function(city){
+        var searchHistoryItem = $('<li class = list-group city-btn>');
+        searchHistoryItem.attr("data-value", city);
+        searchHistoryItem.text(city);
+        searchHistoryList.prepend(searchHistoryItem);
+    })
+    localStorage.setItem("cities", JSON.stringify(cityList));
+}
+
+/* From local storage we grab the city list(string)
+and update the city list array for
+the search history side bar
+*/
+function loadHistory() {
+    if(localStorage.getItem("cities")){
+        cityList = JSON.parse(localStorage.getItem("cities"));
+        var lastIndex = cityList.length - 1;
+        listArray();
+        if (cityList.length !== 0) {
+            currentConditionsRequest(cityList[lastIndex]);
+            weatherContent.removeClass("hide");
+        }
+    }
+}
+
+/* Searching if there are elements in
+the sidebar in order to show the clear btn
+*/
+function showClear(){
+    if(searchHistoryList.text() !== ""){
+        clearHistoryBtn.removeClass("hide");
+    }
+}
