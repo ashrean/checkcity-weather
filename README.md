@@ -28,9 +28,9 @@ the current date and the weather conditions along with the upcoming five-day for
 7. Type code . (make sure to add space between the code and the period) and VS Code will automatically open it up for you.
 
 # Github Account
-https://github.com/ashrean
+URL -> https://github.com/ashrean
 
-Deployed Link:
+Deployed Link -> https://ashrean.github.io/checkcity-weather/
 # Contacts
 Email - sese.ashrean@gmail.com
 
