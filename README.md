@@ -67,6 +67,7 @@ clearHistoryBtn.on("click", function(){
 - https://www.w3schools.com/default.asp
 - https://developer.mozilla.org/en-US/
 - Book: Javascipt(6th edition) - Mike McGrath
+- https://openweathermap.org/forecast5
 
 # Credits
 - Edwin Hernandez

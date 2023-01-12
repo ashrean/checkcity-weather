@@ -140,7 +140,6 @@ function currentConditions(searchValue) {
                 $('#five-day-forecast').append(forecastCol);
                 forecastCol.append(forecastCard);
                 forecastCard.append(forecastCardBody);
-
                 forecastCardBody.append(forecastDate);
                 forecastCardBody.append(forecastIcon);
                 forecastCardBody.append(forecastTemp);
