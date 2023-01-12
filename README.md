@@ -69,5 +69,5 @@ clearHistoryBtn.on("click", function(){
 - Book: Javascipt(6th edition) - Mike McGrath
 
 # Credits
-Edwin Hernandez
-Paul: Brother in-law
+- Edwin Hernandez
+- Paul: Brother in-law
