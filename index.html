@@ -25,13 +25,14 @@
     </form>
     <!-- search history -->
     <div class="card">
-        <ul class="list-group" id="search-history-list"></ul>
+        <ul class="list-group" id="search-history-li"></ul>
         <button class="btn-secondary" type="button" id="clear-history"> Clear History</button>
     </div>
    </div>
 
    <!-- Weather Content  -->
-   <div class="row">
+   <div id="weather-content">
+     <div class="row">
         <div class="city-info">
             <!-- where the selected city goes -->
             <h2 id = "current-city"> City Information </h2>
@@ -41,6 +42,7 @@
             <p class="temp-conditions"> Wind Speed:  <span id="current-wind-speed"></span></p>
             <p>UX index: <span id="uv-index"></span></p>
         </div>
+     </div>
    </div>
 
    <!-- 5day forecast -->
