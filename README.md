@@ -64,9 +64,9 @@ clearHistoryBtn.on("click", function(){
 
 
 # Resources
-https://www.w3schools.com/default.asp
-https://developer.mozilla.org/en-US/
-Book: Javascipt(6th edition) - Mike McGrath
+- https://www.w3schools.com/default.asp
+- https://developer.mozilla.org/en-US/
+- Book: Javascipt(6th edition) - Mike McGrath
 
 # Credits
 Edwin Hernandez
